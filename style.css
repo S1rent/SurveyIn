@@ -78,6 +78,7 @@ html, body {
 
 .main-content {
     margin-left: 340px;
+    min-width: 720px !important;
 }
 
 .user-avatar {
@@ -183,5 +184,11 @@ html, body {
 }
 
 .profile-item-description {
+    font-size: 24px;
+}
+
+.btn-topup {
+    background-color: #07D228;
+    color: white;
     font-size: 24px;
 }
