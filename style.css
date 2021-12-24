@@ -94,6 +94,11 @@ html, body {
     border-radius: 20px;
 }
 
+.sidebar-active {
+    background-color: #FFC700 !important;
+    color: black !important;
+}
+
 .sidebar-subtitle {
     font-size: 30px;
     font-weight: 300;
@@ -157,4 +162,26 @@ html, body {
     font-weight: bold;
     font-size: 18px;
     color: #767070;
+}
+
+.profile-wrapper {
+    margin: auto;
+    border: 2px solid #E4E4E4;
+    box-sizing: border-box;
+    box-shadow: 10px 5px 4px rgba(0, 0, 0, 0.25);
+    width: 75%;
+}
+
+.profile-picture-section {
+    text-align: center;
+}
+
+.profile-item-title {
+    color: #F61919;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.profile-item-description {
+    font-size: 24px;
 }
