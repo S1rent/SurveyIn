@@ -8,6 +8,10 @@
     color: #FF0000 !important;
 } 
 
+.grayC4C4C4 {
+    color: #C4C4C4 !important;
+}
+
 .blue2f92db {
     color: #2F92DB !important;
 }
@@ -20,10 +24,11 @@ html, body {
     padding: 0;
     margin: 0;
     height: 100%;
+    font-family: 'Roboto', sans-serif;
+    min-width: 400px !important;
 }
 
 .app-logo {
-    font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 
@@ -33,15 +38,27 @@ html, body {
     justify-content: center;
 }
 
+.finishup-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .big-input {
-    width: 530px;
+    width: 544px;
     height: 100px;
+    border-radius: 12px !important;
+}
+
+.small-input {
+    height: 61px;
+    border-radius: 12px !important;
 }
 
 .button-input {
-    width: 530px;
+    width: 544px;
     height: 84px !important; 
     font-size: 36px !important;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+    font-weight: bold ;
+    border-radius: 12px !important;
 }
