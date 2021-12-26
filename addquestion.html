@@ -61,77 +61,52 @@
                 <h1 class="app-logo mb-4"><span class="redff0000">Survey</span><span class="text-black">In</span></h1>
             </a>
 
+            <h4>Survey Title</h4>
+            <div class="mb-3">
+                <input id="tv-option" type="text" class="form-control py-2" id="answeroption" placeholder="Title"></input>
+            </div>
+
             <section class="mt-5 mb-3">
                 <div class="mb-4">
-                    <h4>Question</h4>
+                    <h4>Survey Description</h4>
                     <div class="mb-3">
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Input Question" style="height: 200px; padding: 20px 0 150px 25px;">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Description" style="height: 200px; padding: 8px 0 150px 16px;">
                     </div>
-
-                    <h4 class="mt-5">Choice Option</h4>
-                    <section class="d-flex mb-3 align-items-center">
-                        <div class="mb-3" style="width: 50%; margin-right: 32px;">
-                            <input id="tv-option" type="text" class="form-control py-3" id="answeroption" placeholder="Input Choice Option"></input>
-                        </div>
-                        
-                        <span class="d-flex justify-content-end">
-                            <button id="btn-add" type="button" class="btn btn-primary" style="height: 36px !important;">Add</button>
-                        </span>
-                    </section>
-
-                    <h4 class="mt-5">Choice Option Result</h4>
-                    <section>
-                        <div id="option-results" class="card">
-                            <div class="card-body px-4 py-3 d-flex justify-content-between align-items-center">
-                                <div style="width: 50%;">
-                                    <input class="form-check-input" style="width: 30px; height: 30px; border-color: black; border-width: 1px;" type="radio" name="role" id="creator">
-                                    <label class="form-check-label mt-1" for="creator">
-                                        <b class="mx-3" style="font-size: x-large;">iPhone</b>
-                                    </label>
-                                </div>
-
-                                <button class="text-decoration-none btn-delete" style="border: none; background-color: transparent;">
-                                    <h4 class="redff0000">Delete</h4>
-                                </button>
-                            </div>
-
-                            
-                        </div>
-                    </section>
-                    
                 </div>
             </section>
-            <span class="d-flex justify-content-end">
-                <button type="button" class="btn btn-primary">Add Question</button>
+
+            <span class="d-flex align-items-center mb-4">
+                <div class="form-control border-0 p-0">
+                    <h4>Budget</h4>
+                    <input id="tv-option" type="number" class="form-control py-2" id="answeroption" placeholder="-"></input>
+                </div>
+                <div style="width: 2%;"></div>
+                
+                <div class="form-control border-0 p-0">
+                    <h4>Finish Date</h4>
+                    <input id="tv-option" type="date" class="form-control py-2" id="answeroption"></input>
+                </div>
+                <div style="width: 2%;"></div>
+
+                <div class="form-control border-0 p-0">
+                    <h4>Max Quota</h4>
+                    <input id="tv-option" type="number" class="form-control py-2" id="answeroption" placeholder="-"></input>
+                </div>
+            </span>
+
+            <span class="d-flex align-items-center mb-4">
+                <button type="button" class="btn btn-primary w-50">Add Multiple Choice Question</button>
+                <div style="width: 2%;"></div>
+                <button type="button" class="btn btn-primary w-50">Add Scale Question</button>
+            </span>
+
+
+            <span class="d-flex justify-content-between align-items-center">
+                <h4 class="redff0000">Total Question: 2</h4>
+                <button type="button" class="btn btn-primary">Create</button>
             </span>
         </section>
     </main>
-
-    <script>
-        $(document).ready(function(){
-            let view = document.getElementById('option-results')
-            let textView = document.getElementById('tv-option')
-
-            $("#btn-add").click(function() {
-                let item = `
-                <div class="card-body px-4 py-3 d-flex justify-content-between align-items-center">
-                    <div style="width: 50%;">
-                        <input class="form-check-input" style="width: 30px; height: 30px; border-color: black; border-width: 1px;" type="radio" name="role" id="creator">
-                        <label class="form-check-label mt-1" for="creator">
-                            <b class="mx-3" style="font-size: x-large;">${textView.value}</b>
-                        </label>
-                    </div>
-
-                    <button class="text-decoration-none btn-delete" style="border: none; background-color: transparent;">
-                        <h4 class="redff0000">Delete</h4>
-                    </button>
-                </div>
-                `
-                view.innerHTML += item
-            })
-
-        });
-    </script>
 
   </body>
 </html>
