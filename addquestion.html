@@ -90,7 +90,7 @@
                                     </label>
                                 </div>
 
-                                <button id="iPhone" class="text-decoration-none" style="border: none; background-color: transparent;" onclick="del(id)">
+                                <button class="text-decoration-none btn-delete" style="border: none; background-color: transparent;">
                                     <h4 class="redff0000">Delete</h4>
                                 </button>
                             </div>
@@ -108,56 +108,29 @@
     </main>
 
     <script>
-        let arr = [
-            "iPhone"
-        ]
         $(document).ready(function(){
             let view = document.getElementById('option-results')
             let textView = document.getElementById('tv-option')
 
             $("#btn-add").click(function() {
-                view.innerHTML = ""
-                arr.push(textView.value)
-                arr.forEach((item) => {
-                    view.innerHTML += `
-                        <div class="card-body px-4 py-3 d-flex justify-content-between align-items-center">
-                            <div style="width: 50%;">
-                                <input class="form-check-input" style="width: 30px; height: 30px; border-color: black; border-width: 1px;" type="radio" name="role" id="creator">
-                                <label class="form-check-label mt-1" for="creator">
-                                    <b class="mx-3" style="font-size: x-large;">${item}</b>
-                                </label>
-                            </div>
-
-                            <button id="${item}" class="text-decoration-none btn-delete" style="border: none; background-color: transparent;" onclick="del(id)">
-                                <h4 class="redff0000">Delete</h4>
-                            </button>
-                        </div>
-                    `
-                })
-            })
-        });
-        function del(e) {
-            arr = arr.filter((item) => {
-                return item != e
-            })
-            document.getElementById('option-results').innerHTML = ""
-            arr.forEach((item) => {
-                document.getElementById('option-results').innerHTML += `
-                    <div class="card-body px-4 py-3 d-flex justify-content-between align-items-center">
-                        <div style="width: 50%;">
-                            <input class="form-check-input" style="width: 30px; height: 30px; border-color: black; border-width: 1px;" type="radio" name="role" id="creator">
-                            <label class="form-check-label mt-1" for="creator">
-                                <b class="mx-3" style="font-size: x-large;">${item}</b>
-                            </label>
-                        </div>
-
-                        <button id="${item}" class="text-decoration-none btn-delete" style="border: none; background-color: transparent;" onclick="del(id)">
-                            <h4 class="redff0000">Delete</h4>
-                        </button>
+                let item = `
+                <div class="card-body px-4 py-3 d-flex justify-content-between align-items-center">
+                    <div style="width: 50%;">
+                        <input class="form-check-input" style="width: 30px; height: 30px; border-color: black; border-width: 1px;" type="radio" name="role" id="creator">
+                        <label class="form-check-label mt-1" for="creator">
+                            <b class="mx-3" style="font-size: x-large;">${textView.value}</b>
+                        </label>
                     </div>
+
+                    <button class="text-decoration-none btn-delete" style="border: none; background-color: transparent;">
+                        <h4 class="redff0000">Delete</h4>
+                    </button>
+                </div>
                 `
+                view.innerHTML += item
             })
-        }
+
+        });
     </script>
 
   </body>
