@@ -202,3 +202,24 @@ body {
   font-size: 24px;
   border-radius: 12px;
 }
+
+.top-left {
+  position: absolute;
+  top: 265px;
+  left: 600px;
+  /* transform: translate(-38%, -43%); */
+}
+
+.centered {
+  position: absolute;
+  top: 52%;
+  left: 61%;
+  transform: translate(-50%, -50%);
+}
+
+.centered-bottom {
+  position: absolute;
+  top: 63%;
+  left: 61%;
+  transform: translate(-50%, -50%);
+}
