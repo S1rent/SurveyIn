@@ -66,7 +66,7 @@
                         <aside class="d-flex w-100 justify-content-between">
                             <p>Created 10 Dec 2021, 13:22</p>
                             <div class="d-block">
-                            <img src="ic-respondents.png">
+                            <img src={{ asset('images/ic-respondents.png') }}>
                             <p class="m-0 text-end" style="position: relative; z-index: 100;top: -40px; right: -12px;">2</p>
                             </div>
                         </aside>
@@ -133,7 +133,7 @@
                         <div class="d-flex justify-content-between align-items-center">
                             <h4 class="redff0000">Start - Finish</h4>
                             <div class="d-flex">
-                                <img src="ic-money.png" width="28px" height="28px">
+                                <img src={{ asset('images/ic-money.png') }} width="28px" height="28px">
                                 <p style="margin-left: 8px;">Rp 1.000</p>
                             </div>
                         </div>
@@ -141,7 +141,7 @@
                         <div class="d-flex justify-content-between align-items-center">
                             <h5 style="color: #A5A5A5;">10 Dec 2021 - 1 Jan 2022</h5>
                             <div class="d-flex">
-                                <img src="ic-reward-point.png" width="28px" height="28px">
+                                <img src={{ asset('images/ic-reward-point.png') }} width="28px" height="28px">
                                 <p style="margin-left: 8px;">10 Point</p>
                             </div>
                         </div>

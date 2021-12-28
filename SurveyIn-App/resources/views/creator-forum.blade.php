@@ -64,7 +64,7 @@
                 <div class="thread-item text-decoration-none">
                     <article class="py-3 px-4 align-items-center mb-4">
                         <div class="d-flex align-items-center" style="width: 100%;">
-                            <img class="thread-avatar" src="avatar-violeta.png">
+                            <img class="thread-avatar" src={{ asset('images/avatar-violeta.png') }}>
 
                             <div class="thread-item-description" style="width: 100%;">
                                 <h3>Violeta Margaret</h3>
@@ -99,7 +99,7 @@
                 <div class="thread-item text-decoration-none">
                     <article class="py-3 px-4 align-items-center mb-4">
                         <div class="d-flex align-items-center" style="width: 100%;">
-                            <img class="thread-avatar" src="avatar-budi.png">
+                            <img class="thread-avatar" src={{ asset('images/avatar-budi.png') }}>
 
                             <div class="thread-item-description" style="width: 100%;">
                                 <h3>Budi</h3>
@@ -119,7 +119,7 @@
                 <div class="thread-item text-decoration-none">
                     <article class="py-3 px-4 align-items-center mb-4">
                         <div class="d-flex align-items-center" style="width: 100%;">
-                            <img class="thread-avatar" src="avatar-violeta.png">
+                            <img class="thread-avatar" src={{ asset('images/avatar-violeta.png') }}>
 
                             <div class="thread-item-description" style="width: 100%;">
                                 <h3>Violeta Margaret</h3>
