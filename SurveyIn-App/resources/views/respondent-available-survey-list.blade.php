@@ -180,122 +180,12 @@
                 </div>
             </section>
 
-            <section>
-                <div class="row flex-wrap">
-                    <a href={{ url('/respondent/survey-detail') }} class="col text-decoration-none survey-item">
-                        <article>
-                            <div class="shadow bg-body rounded mb-5">
-                                <h3 class="px-3 pt-3">WorkIt Application</h3>
-                                <div class="separator-black"></div>
-
-                                <img src={{ asset('images/ic-respondents.png') }}>
-                                <p>2 Respondent</p>
-
-                                <div class="d-flex align-items-center justify-content-between px-5">
-                                    <div>
-                                        <img src={{ asset('images/ic-money.png') }}>
-                                        <p>Rp 1.000</p>
-                                    </div>
-
-                                    <div>
-                                        <img src={{ asset('images/ic-reward-point.png') }}>
-                                        <p>10 Point</p>
-                                    </div>
-                                </div>
-
-                                <p class="pb-3">Created 10 Dec 2021, 13:22</p>
-                            </div>
-                        </article>
-                    </a>
-
-                    <a href={{ url('/respondent/survey-detail') }} class="col text-decoration-none survey-item">
-                        <article>
-                            <div class="shadow bg-body rounded mb-5">
-                                <h3 class="px-3 pt-3">IoT 4.0</h3>
-                                <div class="separator-black"></div>
-
-                                <img src={{ asset('images/ic-respondents.png') }}>
-                                <p>10 Respondent</p>
-
-                                <div class="d-flex align-items-center justify-content-between px-5">
-                                    <div>
-                                        <img src={{ asset('images/ic-money.png') }}>
-                                        <p>Rp 500</p>
-                                    </div>
-
-                                    <div>
-                                        <img src={{ asset('images/ic-reward-point.png') }}>
-                                        <p>5 Point</p>
-                                    </div>
-                                </div>
-
-                                <p class="pb-3">Created 17 Nov 2021, 20:02</p>
-                            </div>
-                        </article>
-                    </a>
-
-                    <a href={{ url('/respondent/survey-detail') }} class="col text-decoration-none survey-item">
-                        <article>
-                            <div class="shadow bg-body rounded mb-5">
-                                <h3 class="px-3 pt-3">New VR Application</h3>
-                                <div class="separator-black"></div>
-
-                                <img src={{ asset('images/ic-respondents.png') }}>
-                                <p>50 Respondent</p>
-
-                                <div class="d-flex align-items-center justify-content-between px-5">
-                                    <div>
-                                        <img src={{ asset('images/ic-money.png') }}>
-                                        <p>Rp 1.500</p>
-                                    </div>
-
-                                    <div>
-                                        <img src={{ asset('images/ic-reward-point.png') }}>
-                                        <p>15 Point</p>
-                                    </div>
-                                </div>
-
-                                <p class="pb-3">Created 4 May 2021, 10:00</p>
-                            </div>
-                        </article>
-                    </a>
-
-                    <a href={{ url('/respondent/survey-detail') }} class="col text-decoration-none survey-item">
-                        <article>
-                            <div class="shadow bg-body rounded mb-5">
-                                <h3 class="px-3 pt-3">GTalk UI Experience</h3>
-                                <div class="separator-black"></div>
-
-                                <img src={{ asset('images/ic-respondents.png') }}>
-                                <p>45 Respondent</p>
-
-                                <div class="d-flex align-items-center justify-content-between px-5">
-                                    <div>
-                                        <img src={{ asset('images/ic-money.png') }}>
-                                        <p>Rp 1.000</p>
-                                    </div>
-
-                                    <div>
-                                        <img src={{ asset('images/ic-reward-point.png') }}>
-                                        <p>10 Point</p>
-                                    </div>
-                                </div>
-
-                                <p class="pb-3">Created 23 Feb 2021, 08:27</p>
-                            </div>
-                        </article>
-                    </a>
-                </div>
-            </section>
-
-            <nav aria-label="Page navigation example">
-                <ul class="pagination ">
+            <nav aria-label="Page navigation">
+                <ul class="pagination d-flex justify-content-center">
                     <li class="page-item disabled">
                         <a class="page-link"> &#8249 </a>
                     </li>
                     <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
                     <li class="page-item">
                         <a class="page-link" href="#"> &#8250 </a>
                     </li>
