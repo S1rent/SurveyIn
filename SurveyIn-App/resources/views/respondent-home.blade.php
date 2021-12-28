@@ -19,7 +19,7 @@
     <main>
         <!-- Sidebar -->
         <nav class="position-absolute sidebar bg-blue09173A p-4">
-            <img src="respondent-profile-img.png" class="user-avatar mb-4 mt-4">
+            <img src="../{{ $user->profileImageURL }}" class="user-avatar mb-4 mt-4">
 
             <a href="respondent-profile.html" class="text-decoration-none sidebar-menu mb-5" style="width: 80%;">
                 <div>
@@ -32,7 +32,7 @@
             <a href="respondent-viewSurveys.html"
                 class="text-decoration-none sidebar-menu mb-4 d-flex align-items-center justify-content-start"
                 style="width: 100%; padding: 4px 16px;">
-                <img src="ic-eye.png" class="sidebar-sub-icon">
+                <img src={{ asset('images/ic-eye.png') }} class="sidebar-sub-icon">
                 <div style="margin-left: 16px;">
                     <p class="m-0 text-center" style="font-size: 30px;">View Surveys</p>
                 </div>
@@ -41,7 +41,7 @@
             <a href="respondent-viewHistory.html"
                 class="text-decoration-none sidebar-menu mb-5 d-flex align-items-center justify-content-start"
                 style="width: 100%; padding: 4px 16px;">
-                <img src="ic-eye.png" class="sidebar-sub-icon">
+                <img src={{ asset('images/ic-eye.png') }} class="sidebar-sub-icon">
                 <div style="margin-left: 16px;">
                     <p class="m-0 text-center" style="font-size: 30px;">View History</p>
                 </div>
@@ -52,15 +52,15 @@
             <a href="respondent-createThread.html"
                 class="text-decoration-none sidebar-menu mb-5 d-flex align-items-center justify-content-start"
                 style="width: 100%; padding: 4px 16px;">
-                <img src="ic-create-survey.png" class="sidebar-sub-icon">
+                <img src="{{ asset('images/ic-create-survey.png') }}" class="sidebar-sub-icon">
                 <div style="margin-left: 16px;">
                     <p class="m-0 text-center" style="font-size: 30px;">Create Thread</p>
                 </div>
             </a>
 
             <h3 class="text-white sidebar-subtitle mb-4 mt-3">Logout</h3>
-            <a href="index.html">
-                <img src="ic-logout.png" style="width: 45px; height: 45px;margin-left: -16px;">
+            <a href="{{ url('logout') }}">
+                <img src={{ asset('images/ic-logout.png') }} style="width: 45px; height: 45px;margin-left: -16px;">
             </a>
 
         </nav>
@@ -82,15 +82,15 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="ads-1.png" class="d-block w-100" width="300px" height="300px"
+                        <img src={{ asset('images/ads-1.png') }} class="d-block w-100" width="300px" height="300px"
                             style="border-radius: 30px;">
                     </div>
                     <div class="carousel-item">
-                        <img src="ads-2.png" class="d-block w-100" width="300px" height="300px"
+                        <img src={{ asset('images/ads-2.png') }} class="d-block w-100" width="300px" height="300px"
                             style="border-radius: 30px;">
                     </div>
                     <div class="carousel-item">
-                        <img src="ads-3.png" class="d-block w-100" width="300px" height="300px"
+                        <img src={{ asset('images/ads-3.png') }} class="d-block w-100" width="300px" height="300px"
                             style="border-radius: 30px;">
                     </div>
                 </div>
@@ -113,17 +113,17 @@
                                 <h3 class="px-3 pt-3">WorkIt Application</h3>
                                 <div class="separator-black"></div>
 
-                                <img src="ic-respondents.png">
+                                <img src={{ asset('images/ic-respondents.png') }}>
                                 <p>2 Respondent</p>
 
                                 <div class="d-flex align-items-center justify-content-between px-5">
                                     <div>
-                                        <img src="ic-money.png">
+                                        <img src={{ asset('images/ic-money.png') }}>
                                         <p>Rp 1.000</p>
                                     </div>
 
                                     <div>
-                                        <img src="ic-reward-point.png">
+                                        <img src={{ asset('images/ic-reward-point.png') }}>
                                         <p>10 Point</p>
                                     </div>
                                 </div>
@@ -139,17 +139,17 @@
                                 <h3 class="px-3 pt-3">IoT 4.0</h3>
                                 <div class="separator-black"></div>
 
-                                <img src="ic-respondents.png">
+                                <img src={{ asset('images/ic-respondents.png') }}>
                                 <p>10 Respondent</p>
 
                                 <div class="d-flex align-items-center justify-content-between px-5">
                                     <div>
-                                        <img src="ic-money.png">
+                                        <img src={{ asset('images/ic-money.png') }}>
                                         <p>Rp 500</p>
                                     </div>
 
                                     <div>
-                                        <img src="ic-reward-point.png">
+                                        <img src={{ asset('images/ic-reward-point.png') }}>
                                         <p>5 Point</p>
                                     </div>
                                 </div>
@@ -165,17 +165,17 @@
                                 <h3 class="px-3 pt-3">New VR Application</h3>
                                 <div class="separator-black"></div>
 
-                                <img src="ic-respondents.png">
+                                <img src={{ asset('images/ic-respondents.png') }}>
                                 <p>50 Respondent</p>
 
                                 <div class="d-flex align-items-center justify-content-between px-5">
                                     <div>
-                                        <img src="ic-money.png">
+                                        <img src={{ asset('images/ic-money.png') }}>
                                         <p>Rp 1.500</p>
                                     </div>
 
                                     <div>
-                                        <img src="ic-reward-point.png">
+                                        <img src={{ asset('images/ic-reward-point.png') }}>
                                         <p>15 Point</p>
                                     </div>
                                 </div>
@@ -191,17 +191,17 @@
                                 <h3 class="px-3 pt-3">GTalk UI Experience</h3>
                                 <div class="separator-black"></div>
 
-                                <img src="ic-respondents.png">
+                                <img src={{ asset('images/ic-respondents.png') }}>
                                 <p>45 Respondent</p>
 
                                 <div class="d-flex align-items-center justify-content-between px-5">
                                     <div>
-                                        <img src="ic-money.png">
+                                        <img src={{ asset('images/ic-money.png') }}>
                                         <p>Rp 1.000</p>
                                     </div>
 
                                     <div>
-                                        <img src="ic-reward-point.png">
+                                        <img src={{ asset('images/ic-reward-point.png') }}>
                                         <p>10 Point</p>
                                     </div>
                                 </div>
@@ -219,7 +219,7 @@
                 <a href="respondent-forum.html" class="thread-item text-decoration-none">
                     <article class="py-3 px-4 align-items-center mb-4">
                         <div class="d-flex align-items-center" style="width: 100%;">
-                            <img class="thread-avatar" src="avatar-antonius.png">
+                            <img class="thread-avatar" src={{ asset('images/avatar-antonius.png') }}>
 
                             <div class="thread-item-description" style="width: 100%;">
                                 <h3>Antonius</h3>
@@ -229,7 +229,7 @@
                         </div>
 
                         <div class="d-flex thread-item-reply">
-                            <img src="ic-reply-arrow.png">
+                            <img src={{ asset('images/ic-reply-arrow.png') }}>
                             <p>20</p>
                         </div>
                     </article>

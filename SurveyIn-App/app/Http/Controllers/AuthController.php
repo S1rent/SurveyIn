@@ -19,9 +19,27 @@ class AuthController extends Controller
     public function getCreatorHomePage()
     {
         $user = User::where('email', Cookie::get('email'))->first();
+        if($user->fullName == NULL) {
+            return redirect('finishup');
+        }
 
         return view(
             'creator-home',
+            [
+                'user' => $user
+            ]
+        );
+    }
+
+    public function getRespondentHomePage()
+    {
+        $user = User::where('email', Cookie::get('email'))->first();
+        if($user->fullName == NULL) {
+            return redirect('finishup');
+        }
+
+        return view(
+            'respondent-home',
             [
                 'user' => $user
             ]
@@ -35,7 +53,14 @@ class AuthController extends Controller
 
     public function getFinishProfilePage()
     {
-        return view('finish-profile');
+        $user = User::where('email', Cookie::get('email'))->first();
+        if($user->fullName == NULL) {
+            return view('finish-profile');
+        } else if($user->roleStatus == '0') {
+            return redirect('/creator/home');
+        } else {
+            return redirect('/respondent/home');
+        }
     }
 
     public function loginProcess(Request $request)
@@ -78,7 +103,7 @@ class AuthController extends Controller
     {
         $validation = $request->validate(
             [
-                'email' => 'required',
+                'email' => 'required|unique:users',
                 'password' => 'required',
                 'confirmpassword' => 'required',
                 'role' => 'required'
