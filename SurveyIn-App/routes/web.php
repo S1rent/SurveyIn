@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+Route::get('/login', [AuthController::class, 'getLoginPage']);
+Route::post('/login', [AuthController::class, 'loginProcess'])->name('login.process');
+
+Route::get('/logout', [AuthController::class,'logoutProcess'])->name('logout.process');
+
+Route::get('/register', [AuthController::class, 'getRegisterPage']);
+Route::post('/register', [AuthController::class, 'registerProcess'])->name('register.process');
+
+Route::middleware('login.check')->group(function () {
+    Route::get('/finishup', [AuthController::class, 'getFinishProfilePage']);
+    Route::post('/finishup', [AuthController::class, 'finishUpProcess'])->name('finishup.process');
+
+    Route::get('/creator/home', [AuthController::class, 'getCreatorHomePage']);
+    Route::get('/respondent/home', [AuthController::class, 'getRespondentHomePage']);
 });
+
