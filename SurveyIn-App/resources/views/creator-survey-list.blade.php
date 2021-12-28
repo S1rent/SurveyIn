@@ -63,7 +63,7 @@
             <section class="mt-5 mb-3">
                 <h3 class="mb-3" style="color: #767070; font-weight: bold;">Your Surveys</h3>
                 <div class="row flex-wrap">
-                    <a href="creator-surveydetail.html" class="col text-decoration-none survey-item">
+                    <a href={{ url('/creator/survey-detail') }} class="col text-decoration-none survey-item">
                         <article >
                             <div class="shadow bg-body rounded mb-5">
                                 <h3 class="px-3 pt-3">WorkIt Application</h3>
@@ -89,7 +89,7 @@
                         </article>
                     </a>
 
-                    <a href="creator-surveydetail.html" class="col text-decoration-none survey-item">
+                    <a href={{ url('/creator/survey-detail') }} class="col text-decoration-none survey-item">
                         <article >
                             <div class="shadow bg-body rounded mb-5">
                                 <h3 class="px-3 pt-3">IoT 4.0</h3>
@@ -115,7 +115,7 @@
                         </article>
                     </a>
 
-                    <a href="creator-surveydetail.html" class="col text-decoration-none survey-item">
+                    <a href={{ url('/creator/survey-detail') }} class="col text-decoration-none survey-item">
                         <article >
                             <div class="shadow bg-body rounded mb-5">
                                 <h3 class="px-3 pt-3">New VR Application</h3>
@@ -141,7 +141,7 @@
                         </article>
                     </a>
 
-                    <a href="creator-surveydetail.html" class="col text-decoration-none survey-item">
+                    <a href={{ url('/creator/survey-detail') }} class="col text-decoration-none survey-item">
                         <article >
                             <div class="shadow bg-body rounded mb-5">
                                 <h3 class="px-3 pt-3">GTalk UI Experience</h3>

@@ -40,4 +40,9 @@ class SurveyController extends Controller
     {
         return view('creator-add-scale-question');
     }
+
+    public function getCreatorRespondentAnswer()
+    {
+        return view('creator-survey-respondent-answer');
+    }
 }

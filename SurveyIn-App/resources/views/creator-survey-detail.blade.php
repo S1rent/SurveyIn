@@ -73,7 +73,7 @@
 
                         <div class="d-flex justify-content-between">
                             <h2>WorkIt Application</h2>
-                            <button type="button" class="btn btn-light text-success shadow " onclick="window.location.href='creator-respondent-answer.html'">
+                            <button type="button" class="btn btn-light text-success shadow " onclick="window.location.href='{{ url('/creator/respondent-answer') }}'">
                                 <b><h4 class="p-0 m-0">View Result</h4></b>
                             </button>
                         </div>
