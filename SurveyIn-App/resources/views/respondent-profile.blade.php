@@ -75,20 +75,20 @@
             <div class="profile-wrapper p-lg-4">
 
                 <div class="px-5 py-3 justify-content-between d-flex">
-                    <h4 style="color: #020CFF;">0 Point</h4>
-                    <a href="respondent-reedemReward.html" class="text-secondary text-decoration-none">Reedem Reward</a>
+                    <h4 style="color: #020CFF;">{{ $user->rewardPoint }} Point</h4>
+                    <a href={{ url('/respondent/reward') }} class="text-secondary text-decoration-none">Reedem Reward</a>
                 </div>
 
                 <section class="profile-picture-section">
-                    <img src="respondent-profile-img.png" class="user-avatar mb-3">
-                    <h2>Violet Margaret</h2>
+                    <img src="../{{ $user->profileImageURL }}" class="user-avatar mb-3">
+                    <h2>{{ $user->fullName }}</h2>
                 </section>
 
                 <div class="px-5 py-3">
                     <section>
                         <h2 class="redff0000">Balance</h2>
                         <div class="justify-content-between d-flex">
-                            <h2>Rp. 420.690</h2>
+                            <h2>Rp. {{ $user->balance }}</h2>
                             <a href="respondent-withdraw.html" class="btn btn-topup text-decoration-none">Withdraw</a>
                         </div>
                     </section>
@@ -98,33 +98,33 @@
                     <div class="row">
                         <div class="col">
                             <p class="profile-item-title">Email</p>
-                            <p class="profile-item-description">VioletMt@gmail.com</p>
+                            <p class="profile-item-description">{{ $user->email }}</p>
                         </div>
                         <div class="col">
                             <p class="profile-item-title">Occupation</p>
-                            <p class="profile-item-description">IoT Architecture</p>
+                            <p class="profile-item-description">{{ $user->occupation }}</p>
                         </div>
 
                         <div class="w-100"></div>
 
                         <div class="col">
                             <p class="profile-item-title">Address</p>
-                            <p class="profile-item-description">Jl. Diponegoro no 37</p>
+                            <p class="profile-item-description">{{ $user->address }}</p>
                         </div>
                         <div class="col">
                             <p class="profile-item-title">Place of Birth</p>
-                            <p class="profile-item-description">Bali, Indonesia</p>
+                            <p class="profile-item-description">{{ explode("*", $user->dateAndPOB)[1] }}</p>
                         </div>
 
                         <div class="w-100"></div>
 
                         <div class="col">
                             <p class="profile-item-title">Gender</p>
-                            <p class="profile-item-description">Female</p>
+                            <p class="profile-item-description">{{ $user->gender }}</p>
                         </div>
                         <div class="col">
                             <p class="profile-item-title">Date of Birth</p>
-                            <p class="profile-item-description">21 January 1999</p>
+                            <p class="profile-item-description">{{ explode("*", $user->dateAndPOB)[0] }}</p>
                         </div>
                     </div>
                 </section>

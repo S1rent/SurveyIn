@@ -172,4 +172,19 @@ class SurveyController extends Controller
             ]
         );
     }
+
+    public function getRespondentRedeemRewardPage()
+    {
+        $user = User::where('email', Cookie::get('email'))->first();
+        if($user->fullName == NULL) {
+            return redirect('finishup');
+        }
+
+        return view(
+            'respondent-redeem-reward',
+            [
+                'user' => $user
+            ]
+        );
+    }
 }
