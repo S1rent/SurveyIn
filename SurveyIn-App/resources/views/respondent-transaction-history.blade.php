@@ -21,7 +21,7 @@
         <nav class="position-absolute sidebar bg-blue09173A p-4">
             <img src="../{{ $user->profileImageURL }}" class="user-avatar mb-4 mt-4">
 
-            <a href={{ url('/respondent/profile') }} class="text-decoration-none sidebar-menu mb-5" style="width: 80%;">
+            <a href={{ url('/respondent/profile') }} class="text-decoration-none sidebar-menu sidebar-active mb-5" style="width: 80%;">
                 <div>
                     <p class="m-0 text-center" style="font-size: 30px;">View Profile</p>
                 </div>
