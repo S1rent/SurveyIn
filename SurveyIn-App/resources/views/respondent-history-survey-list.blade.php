@@ -74,23 +74,23 @@
             <section class="mt-5 mb-3">
                 <h3 class="mb-3 fw-bold"> My History</h3>
                 <div class="row flex-wrap">
-                    <a href="respondent-viewHistoryDetail.html" class="col text-decoration-none survey-item">
+                    <a href={{ url('/respondent/history/detail') }} class="col text-decoration-none survey-item">
                         <article>
                             <div class="shadow bg-body rounded mb-5">
                                 <h3 class="px-3 pt-3">WorkIt Application</h3>
                                 <div class="separator-black"></div>
 
-                                <img src="ic-respondents.png">
+                                <img src={{ asset('images/ic-respondents.png') }}>
                                 <p>2 Respondent</p>
 
                                 <div class="d-flex align-items-center justify-content-between px-5">
                                     <div>
-                                        <img src="ic-money.png">
+                                        <img src={{ asset('images/ic-money.png') }}>
                                         <p>Rp 1.000</p>
                                     </div>
 
                                     <div>
-                                        <img src="ic-reward-point.png">
+                                        <img src={{ asset('images/ic-reward-point.png') }}>
                                         <p>10 Point</p>
                                     </div>
                                 </div>
@@ -100,23 +100,23 @@
                         </article>
                     </a>
 
-                    <a href="respondent-viewHistoryDetail.html" class="col text-decoration-none survey-item">
+                    <a href={{ url('/respondent/history/detail') }} class="col text-decoration-none survey-item">
                         <article>
                             <div class="shadow bg-body rounded mb-5">
                                 <h3 class="px-3 pt-3">IoT 4.0</h3>
                                 <div class="separator-black"></div>
 
-                                <img src="ic-respondents.png">
+                                <img src={{ asset('images/ic-respondents.png') }}>
                                 <p>10 Respondent</p>
 
                                 <div class="d-flex align-items-center justify-content-between px-5">
                                     <div>
-                                        <img src="ic-money.png">
+                                        <img src={{ asset('images/ic-money.png') }}>
                                         <p>Rp 500</p>
                                     </div>
 
                                     <div>
-                                        <img src="ic-reward-point.png">
+                                        <img src={{ asset('images/ic-reward-point.png') }}>
                                         <p>5 Point</p>
                                     </div>
                                 </div>
@@ -126,23 +126,23 @@
                         </article>
                     </a>
 
-                    <a href="respondent-viewHistoryDetail.html" class="col text-decoration-none survey-item">
+                    <a href={{ url('/respondent/history/detail') }} class="col text-decoration-none survey-item">
                         <article>
                             <div class="shadow bg-body rounded mb-5">
                                 <h3 class="px-3 pt-3">New VR Application</h3>
                                 <div class="separator-black"></div>
 
-                                <img src="ic-respondents.png">
+                                <img src={{ asset('images/ic-respondents.png') }}>
                                 <p>50 Respondent</p>
 
                                 <div class="d-flex align-items-center justify-content-between px-5">
                                     <div>
-                                        <img src="ic-money.png">
+                                        <img src={{ asset('images/ic-money.png') }}>
                                         <p>Rp 1.500</p>
                                     </div>
 
                                     <div>
-                                        <img src="ic-reward-point.png">
+                                        <img src={{ asset('images/ic-reward-point.png') }}>
                                         <p>15 Point</p>
                                     </div>
                                 </div>
@@ -152,23 +152,23 @@
                         </article>
                     </a>
 
-                    <a href="respondent-viewHistoryDetail.html" class="col text-decoration-none survey-item">
+                    <a href={{ url('/respondent/history/detail') }} class="col text-decoration-none survey-item">
                         <article>
                             <div class="shadow bg-body rounded mb-5">
                                 <h3 class="px-3 pt-3">GTalk UI Experience</h3>
                                 <div class="separator-black"></div>
 
-                                <img src="ic-respondents.png">
+                                <img src={{ asset('images/ic-respondents.png') }}>
                                 <p>45 Respondent</p>
 
                                 <div class="d-flex align-items-center justify-content-between px-5">
                                     <div>
-                                        <img src="ic-money.png">
+                                        <img src={{ asset('images/ic-money.png') }}>
                                         <p>Rp 1.000</p>
                                     </div>
 
                                     <div>
-                                        <img src="ic-reward-point.png">
+                                        <img src={{ asset('images/ic-reward-point.png') }}>
                                         <p>10 Point</p>
                                     </div>
                                 </div>

@@ -86,7 +86,7 @@
                 </div>
 
                 <span class="d-flex justify-content-end">
-                    <button type="button" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-primary" onclick="window.location.href='{{ url('/respondent/home') }}'">Submit</button>
                 </span>
             </div>
         </section>

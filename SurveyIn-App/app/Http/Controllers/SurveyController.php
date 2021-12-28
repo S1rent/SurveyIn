@@ -233,7 +233,7 @@ class SurveyController extends Controller
         );
     }
 
-    public function getRespondentRespontSurveyPage()
+    public function getRespondentRespondSurveyPage()
     {
         $user = User::where('email', Cookie::get('email'))->first();
         if($user->fullName == NULL) {
@@ -242,6 +242,21 @@ class SurveyController extends Controller
 
         return view(
             'respondent-respond-survey',
+            [
+                'user' => $user
+            ]
+        );
+    }
+
+    public function getRespondentHistoryDetailPage()
+    {
+        $user = User::where('email', Cookie::get('email'))->first();
+        if($user->fullName == NULL) {
+            return redirect('finishup');
+        }
+
+        return view(
+            'respondent-history-detail',
             [
                 'user' => $user
             ]
