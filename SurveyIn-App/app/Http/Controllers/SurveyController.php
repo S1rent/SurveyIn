@@ -217,4 +217,34 @@ class SurveyController extends Controller
             ]
         );
     }
+
+    public function getRespondentSurveyDetailPage()
+    {
+        $user = User::where('email', Cookie::get('email'))->first();
+        if($user->fullName == NULL) {
+            return redirect('finishup');
+        }
+
+        return view(
+            'respondent-survey-detail',
+            [
+                'user' => $user
+            ]
+        );
+    }
+
+    public function getRespondentRespontSurveyPage()
+    {
+        $user = User::where('email', Cookie::get('email'))->first();
+        if($user->fullName == NULL) {
+            return redirect('finishup');
+        }
+
+        return view(
+            'respondent-respond-survey',
+            [
+                'user' => $user
+            ]
+        );
+    }
 }

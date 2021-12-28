@@ -51,7 +51,8 @@ Route::middleware('login.check')->group(function () {
         Route::get('/respondent/reward', [SurveyController::class, 'getRespondentRedeemRewardPage']);
         Route::get('/respondent/transaction-history', [SurveyController::class, 'getRespondentTransactionHistoryPage']);
         Route::get('/respondent/withdraw', [SurveyController::class, 'getRespondentWithdrawBalancePage']);
-
+        Route::get('/respondent/survey-detail', [SurveyController::class, 'getRespondentSurveyDetailPage']);
+        Route::get('/respondent/survey/answer', [SurveyController::class, 'getRespondentRespontSurveyPage']);
     });
 });
 
