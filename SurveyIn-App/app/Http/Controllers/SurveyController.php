@@ -2,47 +2,129 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cookie;
 
 class SurveyController extends Controller
 {
     public function getCreatorCreateSurveyPage()
     {
-        return view('creator-create-survey');
+        $user = User::where('email', Cookie::get('email'))->first();
+        if($user->fullName == NULL) {
+            return redirect('finishup');
+        }
+
+        return view(
+            'creator-create-survey',
+            [
+                'user' => $user
+            ]
+        );
     }
 
     public function getCreatorSurveyListPage()
     {
-        return view('creator-survey-list');
+        $user = User::where('email', Cookie::get('email'))->first();
+        if($user->fullName == NULL) {
+            return redirect('finishup');
+        }
+
+        return view(
+            'creator-survey-list',
+            [
+                'user' => $user
+            ]
+        );
     }
 
     public function getCreatorCreateThreadPage()
     {
-        return view('creator-create-thread');
+        $user = User::where('email', Cookie::get('email'))->first();
+        if($user->fullName == NULL) {
+            return redirect('finishup');
+        }
+
+        return view(
+            'creator-create-thread',
+            [
+                'user' => $user
+            ]
+        );
     }
 
     public function getCreatorSurveyDetailPage()
     {
-        return view('creator-survey-detail');
+        $user = User::where('email', Cookie::get('email'))->first();
+        if($user->fullName == NULL) {
+            return redirect('finishup');
+        }
+
+        return view(
+            'creator-survey-detail',
+            [
+                'user' => $user
+            ]
+        );
     }
 
     public function getCreatorForumPage()
     {
-        return view('creator-forum');
+        $user = User::where('email', Cookie::get('email'))->first();
+        if($user->fullName == NULL) {
+            return redirect('finishup');
+        }
+
+        return view(
+            'creator-forum',
+            [
+                'user' => $user
+            ]
+        );
     }
 
     public function getCreatorAddChoiceQuestionPage()
     {
-        return view('creator-add-choice-question');
+        $user = User::where('email', Cookie::get('email'))->first();
+        if($user->fullName == NULL) {
+            return redirect('finishup');
+        }
+
+        return view(
+            'creator-add-choice-question',
+            [
+                'user' => $user
+            ]
+        );
     }
 
     public function getCreatorAddScaleQuestionPage()
     {
-        return view('creator-add-scale-question');
+        $user = User::where('email', Cookie::get('email'))->first();
+        if($user->fullName == NULL) {
+            return redirect('finishup');
+        }
+
+        return view(
+            'creator-add-scale-question',
+            [
+                'user' => $user
+            ]
+        );
     }
 
     public function getCreatorRespondentAnswer()
     {
-        return view('creator-survey-respondent-answer');
+        $user = User::where('email', Cookie::get('email'))->first();
+        if($user->fullName == NULL) {
+            return redirect('finishup');
+        }
+
+        return view(
+            'creator-survey-respondent-answer',
+            [
+                'user' => $user
+            ]
+        );
     }
 }

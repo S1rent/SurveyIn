@@ -15,7 +15,7 @@
     <main>
         <!-- Sidebar -->
         <nav class="position-absolute sidebar bg-blue09173A p-4">
-            <img src="temp-avatar.jpg" class="user-avatar mb-4 mt-4">
+            <img src="../{{ $user->profileImageURL }}" class="user-avatar mb-4 mt-4">
 
             <a href={{ url('/creator/profile') }} class="text-decoration-none sidebar-menu sidebar-active mb-5" style="width: 80%;">
                 <div>
@@ -26,14 +26,14 @@
             <h3 class="text-white sidebar-subtitle mb-3">Survey</h3>
 
             <a href={{ url('/creator/create-survey') }} class="text-decoration-none sidebar-menu mb-4 d-flex align-items-center justify-content-start" style="width: 100%; padding: 4px 16px;">
-                <img src="ic-create-survey.png" class="sidebar-sub-icon">
+                <img src="{{ asset('images/ic-create-survey.png') }}" class="sidebar-sub-icon">
                 <div style="margin-left: 16px;">
                     <p class="m-0 text-center" style="font-size: 30px;">Create Survey</p>
                 </div>
             </a>
 
             <a href={{ url('/creator/survey-list') }} class="text-decoration-none sidebar-menu mb-5 d-flex align-items-center justify-content-start" style="width: 100%; padding: 4px 16px;">
-                <img src="ic-eye.png" class="sidebar-sub-icon">
+                <img src={{ asset('images/ic-eye.png') }} class="sidebar-sub-icon">
                 <div style="margin-left: 16px;">
                     <p class="m-0 text-center" style="font-size: 30px;">My Survey</p>
                 </div>
@@ -42,7 +42,7 @@
             <h3 class="text-white sidebar-subtitle mb-3">Thread</h3>
 
             <a href={{ url('/creator/create-thread') }} class="text-decoration-none sidebar-menu mb-5 d-flex align-items-center justify-content-start" style="width: 100%; padding: 4px 16px;">
-                <img src="ic-create-survey.png" class="sidebar-sub-icon">
+                <img src="{{ asset('images/ic-create-survey.png') }}" class="sidebar-sub-icon">
                 <div style="margin-left: 16px;">
                     <p class="m-0 text-center" style="font-size: 30px;">Create Thread</p>
                 </div>
@@ -50,7 +50,7 @@
 
             <h3 class="text-white sidebar-subtitle mb-4 mt-3">Logout</h3>
             <a href="{{ url('logout') }}">
-                <img src="ic-logout.png" style="width: 45px; height: 45px;margin-left: -16px;">
+                <img src={{ asset('images/ic-logout.png') }} style="width: 45px; height: 45px;margin-left: -16px;">
             </a>
 
         </nav>
