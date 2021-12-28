@@ -63,14 +63,14 @@
 
             <div class="profile-wrapper p-lg-4">
                 <section class="profile-picture-section">
-                    <img src="temp-avatar.jpg" class="user-avatar mb-3">
+                    <img src="../{{ $user->profileImageURL }}" class="user-avatar mb-3">
                     <h2>Philip Indra Prayitno</h2>
                 </section>
 
                 <div class="px-5 py-3">
                     <section>
                         <h2 class="redff0000">Balance</h2>
-                        <h2>Rp. 420.690</h2>
+                        <h2>Rp. {{ $user->balance }}</h2>
 
                         <div class="mb-3 mt-4 d-flex justify-content-between flex-wrap">
                             <input style="border-color: black; border-width: 1px; width: 80% !important;" min="0" type="number" class="form-control" id="amount" name="amount" placeholder="Amount">
@@ -85,33 +85,33 @@
                     <div class="row">
                         <div class="col">
                             <p class="profile-item-title">Email</p>
-                            <p class="profile-item-description">Antonius@gmail.com</p>
+                            <p class="profile-item-description">{{ $user->email }}</p>
                         </div>
                         <div class="col">
                             <p class="profile-item-title">Occupation</p>
-                            <p class="profile-item-description">Software Engineer</p>
+                            <p class="profile-item-description">{{ $user->occupation }}</p>
                         </div>
 
                         <div class="w-100"></div>
 
                         <div class="col">
                             <p class="profile-item-title">Address</p>
-                            <p class="profile-item-description">Jl. MT Haryono no 21</p>
+                            <p class="profile-item-description">{{ $user->address }}</p>
                         </div>
                         <div class="col">
                             <p class="profile-item-title">Place of Birth</p>
-                            <p class="profile-item-description">Jakarta, Indonesia</p>
+                            <p class="profile-item-description">{{ explode("*", $user->dateAndPOB)[1] }}</p>
                         </div>
 
                         <div class="w-100"></div>
 
                         <div class="col">
                             <p class="profile-item-title">Gender</p>
-                            <p class="profile-item-description">Male</p>
+                            <p class="profile-item-description">{{ $user->gender }}</p>
                         </div>
                         <div class="col">
                             <p class="profile-item-title">Date of Birth</p>
-                            <p class="profile-item-description">10 November 1997</p>
+                            <p class="profile-item-description">{{ explode("*", $user->dateAndPOB)[0] }}</p>
                         </div>
                     </div>
                 </section>

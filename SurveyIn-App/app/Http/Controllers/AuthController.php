@@ -161,7 +161,7 @@ class AuthController extends Controller
                 [
                     'fullName' => $validation['name'],
                     'gender' => $validation['gender'],
-                    'dateAndPOB' => $validation['dob'].`$`.$validation['pob'],
+                    'dateAndPOB' => $validation['dob'].'*'.$validation['pob'],
                     'occupation' => $validation['occupation'],
                     'rewardPoint' => 0,
                     'balance' => 0,
