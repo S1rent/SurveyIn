@@ -72,7 +72,7 @@
             </a>
 
             <section class="mt-5 mb-3">
-                <h3 class="mb-3" style="color: #767070; font-weight: bold;">Your Surveys</h3>
+                <h3 class="mb-3" style="color: #767070; font-weight: bold;">Available Surveys</h3>
                 <div class="row flex-wrap">
                     <a href={{ url('/respondent/survey-detail') }} class="col text-decoration-none survey-item">
                         <article>
