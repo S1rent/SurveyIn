@@ -113,7 +113,7 @@ class SurveyController extends Controller
         );
     }
 
-    public function getCreatorRespondentAnswer()
+    public function getCreatorRespondentAnswerPage()
     {
         $user = User::where('email', Cookie::get('email'))->first();
         if($user->fullName == NULL) {
@@ -122,6 +122,51 @@ class SurveyController extends Controller
 
         return view(
             'creator-survey-respondent-answer',
+            [
+                'user' => $user
+            ]
+        );
+    }
+
+    public function getRespondentAvailableSurveyListPage()
+    {
+        $user = User::where('email', Cookie::get('email'))->first();
+        if($user->fullName == NULL) {
+            return redirect('finishup');
+        }
+
+        return view(
+            'respondent-available-survey-list',
+            [
+                'user' => $user
+            ]
+        );
+    }
+
+    public function getRespondentHistorySurveyListPage()
+    {
+        $user = User::where('email', Cookie::get('email'))->first();
+        if($user->fullName == NULL) {
+            return redirect('finishup');
+        }
+
+        return view(
+            'respondent-history-survey-list',
+            [
+                'user' => $user
+            ]
+        );
+    }
+
+    public function getRespondentCreateThreadPage()
+    {
+        $user = User::where('email', Cookie::get('email'))->first();
+        if($user->fullName == NULL) {
+            return redirect('finishup');
+        }
+
+        return view(
+            'respondent-create-thread',
             [
                 'user' => $user
             ]

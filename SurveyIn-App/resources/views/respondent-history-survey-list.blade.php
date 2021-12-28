@@ -39,7 +39,7 @@
             </a>
 
             <a href={{ url('/respondent/history') }}
-                class="text-decoration-none sidebar-menu mb-5 d-flex align-items-center justify-content-start"
+                class="text-decoration-none sidebar-menu sidebar-active mb-5 d-flex align-items-center justify-content-start"
                 style="width: 100%; padding: 4px 16px;">
                 <img src={{ asset('images/ic-eye.png') }} class="sidebar-sub-icon">
                 <div style="margin-left: 16px;">
@@ -71,59 +71,26 @@
                 <h1 class="app-logo mb-4"><span class="redff0000">Survey</span><span class="text-black">In</span></h1>
             </a>
 
-            <div id="sliderIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#sliderIndicators" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#sliderIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#sliderIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src={{ asset('images/ads-1.png') }} class="d-block w-100" width="300px" height="300px"
-                            style="border-radius: 30px;">
-                    </div>
-                    <div class="carousel-item">
-                        <img src={{ asset('images/ads-2.png') }} class="d-block w-100" width="300px" height="300px"
-                            style="border-radius: 30px;">
-                    </div>
-                    <div class="carousel-item">
-                        <img src={{ asset('images/ads-3.png') }} class="d-block w-100" width="300px" height="300px"
-                            style="border-radius: 30px;">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#sliderIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#sliderIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </button>
-            </div>
-
             <section class="mt-5 mb-3">
-                <h3 class="mb-3" style="color: #767070; font-weight: bold;">Available Survey</h3>
+                <h3 class="mb-3 fw-bold"> My History</h3>
                 <div class="row flex-wrap">
-                    <a href="respondent-surveydetail.html" class="col text-decoration-none survey-item">
+                    <a href="respondent-viewHistoryDetail.html" class="col text-decoration-none survey-item">
                         <article>
                             <div class="shadow bg-body rounded mb-5">
                                 <h3 class="px-3 pt-3">WorkIt Application</h3>
                                 <div class="separator-black"></div>
 
-                                <img src={{ asset('images/ic-respondents.png') }}>
+                                <img src="ic-respondents.png">
                                 <p>2 Respondent</p>
 
                                 <div class="d-flex align-items-center justify-content-between px-5">
                                     <div>
-                                        <img src={{ asset('images/ic-money.png') }}>
+                                        <img src="ic-money.png">
                                         <p>Rp 1.000</p>
                                     </div>
 
                                     <div>
-                                        <img src={{ asset('images/ic-reward-point.png') }}>
+                                        <img src="ic-reward-point.png">
                                         <p>10 Point</p>
                                     </div>
                                 </div>
@@ -133,23 +100,23 @@
                         </article>
                     </a>
 
-                    <a href="respondent-surveydetail.html" class="col text-decoration-none survey-item">
+                    <a href="respondent-viewHistoryDetail.html" class="col text-decoration-none survey-item">
                         <article>
                             <div class="shadow bg-body rounded mb-5">
                                 <h3 class="px-3 pt-3">IoT 4.0</h3>
                                 <div class="separator-black"></div>
 
-                                <img src={{ asset('images/ic-respondents.png') }}>
+                                <img src="ic-respondents.png">
                                 <p>10 Respondent</p>
 
                                 <div class="d-flex align-items-center justify-content-between px-5">
                                     <div>
-                                        <img src={{ asset('images/ic-money.png') }}>
+                                        <img src="ic-money.png">
                                         <p>Rp 500</p>
                                     </div>
 
                                     <div>
-                                        <img src={{ asset('images/ic-reward-point.png') }}>
+                                        <img src="ic-reward-point.png">
                                         <p>5 Point</p>
                                     </div>
                                 </div>
@@ -159,23 +126,23 @@
                         </article>
                     </a>
 
-                    <a href="respondent-surveydetail.html" class="col text-decoration-none survey-item">
+                    <a href="respondent-viewHistoryDetail.html" class="col text-decoration-none survey-item">
                         <article>
                             <div class="shadow bg-body rounded mb-5">
                                 <h3 class="px-3 pt-3">New VR Application</h3>
                                 <div class="separator-black"></div>
 
-                                <img src={{ asset('images/ic-respondents.png') }}>
+                                <img src="ic-respondents.png">
                                 <p>50 Respondent</p>
 
                                 <div class="d-flex align-items-center justify-content-between px-5">
                                     <div>
-                                        <img src={{ asset('images/ic-money.png') }}>
+                                        <img src="ic-money.png">
                                         <p>Rp 1.500</p>
                                     </div>
 
                                     <div>
-                                        <img src={{ asset('images/ic-reward-point.png') }}>
+                                        <img src="ic-reward-point.png">
                                         <p>15 Point</p>
                                     </div>
                                 </div>
@@ -185,23 +152,23 @@
                         </article>
                     </a>
 
-                    <a href="respondent-surveydetail.html" class="col text-decoration-none survey-item">
+                    <a href="respondent-viewHistoryDetail.html" class="col text-decoration-none survey-item">
                         <article>
                             <div class="shadow bg-body rounded mb-5">
                                 <h3 class="px-3 pt-3">GTalk UI Experience</h3>
                                 <div class="separator-black"></div>
 
-                                <img src={{ asset('images/ic-respondents.png') }}>
+                                <img src="ic-respondents.png">
                                 <p>45 Respondent</p>
 
                                 <div class="d-flex align-items-center justify-content-between px-5">
                                     <div>
-                                        <img src={{ asset('images/ic-money.png') }}>
+                                        <img src="ic-money.png">
                                         <p>Rp 1.000</p>
                                     </div>
 
                                     <div>
-                                        <img src={{ asset('images/ic-reward-point.png') }}>
+                                        <img src="ic-reward-point.png">
                                         <p>10 Point</p>
                                     </div>
                                 </div>
@@ -211,29 +178,6 @@
                         </article>
                     </a>
                 </div>
-            </section>
-
-            <section class="mt-2 mb-3">
-                <h3 class="mb-3" style="color: #767070; font-weight: bold;">Thread</h3>
-
-                <a href="respondent-forum.html" class="thread-item text-decoration-none">
-                    <article class="py-3 px-4 align-items-center mb-4">
-                        <div class="d-flex align-items-center" style="width: 100%;">
-                            <img class="thread-avatar" src={{ asset('images/avatar-antonius.png') }}>
-
-                            <div class="thread-item-description" style="width: 100%;">
-                                <h3>Antonius</h3>
-                                <p class="pb-3 text-secondary">29 Nov 2021, 10:37</p>
-                                <h4>Perkembangan VR 2021</h4>
-                            </div>
-                        </div>
-
-                        <div class="d-flex thread-item-reply">
-                            <img src={{ asset('images/ic-reply-arrow.png') }}>
-                            <p>20</p>
-                        </div>
-                    </article>
-                </a>
             </section>
         </section>
     </main>

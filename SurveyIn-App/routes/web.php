@@ -36,7 +36,7 @@ Route::middleware('login.check')->group(function () {
         Route::get('/creator/survey-list', [SurveyController::class, 'getCreatorSurveyListPage']);
         Route::get('/creator/create-thread', [SurveyController::class, 'getCreatorCreateThreadPage']);
         Route::get('/creator/survey-detail', [SurveyController::class, 'getCreatorSurveyDetailPage']);
-        Route::get('/creator/respondent-answer', [SurveyController::class, 'getCreatorRespondentAnswer']);
+        Route::get('/creator/respondent-answer', [SurveyController::class, 'getCreatorRespondentAnswerPage']);
         Route::get('/creator/add-choice-question', [SurveyController::class, 'getCreatorAddChoiceQuestionPage']);
         Route::get('/creator/add-scale-question', [SurveyController::class, 'getCreatorAddScaleQuestionPage']);
         Route::get('/creator/forum', [SurveyController::class, 'getCreatorForumPage']);
@@ -45,6 +45,9 @@ Route::middleware('login.check')->group(function () {
     Route::middleware('respondent.check')->group(function () {
         Route::get('/respondent/home', [AuthController::class, 'getRespondentHomePage']);
         Route::get('/respondent/profile', [ProfileController::class, 'getRespondentProfilePage']);
+        Route::get('/respondent/surveys', [SurveyController::class, 'getRespondentAvailableSurveyListPage']);
+        Route::get('/respondent/history', [SurveyController::class, 'getRespondentHistorySurveyListPage']);
+        Route::get('/respondent/create-thread', [SurveyController::class, 'getRespondentCreateThreadPage']);
     });
 });
 
