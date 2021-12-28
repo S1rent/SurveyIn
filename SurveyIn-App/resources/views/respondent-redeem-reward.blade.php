@@ -68,7 +68,7 @@
 
         <!-- Main Container -->
         <section class="main-content p-4">
-            <a href="respondent-home.html" class="text-decoration-none">
+            <a href={{ url('/respondent/home') }} class="text-decoration-none">
                 <h1 class="app-logo mb-4"><span class="redff0000">Survey</span><span class="text-black">In</span></h1>
             </a>
 
@@ -80,7 +80,7 @@
                 <div class="px-5 py-3 align-items-center justify-content-between d-flex">
                     <h4 id="points" style="color: #020CFF;">{{ $user->rewardPoint }} Point</h4>
                     <h1 class="fw-bold">Reedem Reward</h1>
-                    <a href="respondent-transactionHistory.html"
+                    <a href={{ url('/respondent/transaction-history') }}
                         class="border py-2 px-3 shadow p-3 mb-5 bg-body fw-bold text-decoration-none"
                         style="color: #F61919; border-radius: 12px;">Transaction
                         History</a>

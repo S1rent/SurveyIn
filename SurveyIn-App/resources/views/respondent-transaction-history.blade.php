@@ -7,8 +7,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="{{ asset('css/style-respondent.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <title>SurveyIn</title>
 </head>
 
@@ -22,7 +21,7 @@
         <nav class="position-absolute sidebar bg-blue09173A p-4">
             <img src="../{{ $user->profileImageURL }}" class="user-avatar mb-4 mt-4">
 
-            <a href={{ url('/respondent/profile') }} class="text-decoration-none sidebar-menu sidebar-active mb-5" style="width: 80%;">
+            <a href={{ url('/respondent/profile') }} class="text-decoration-none sidebar-menu mb-5" style="width: 80%;">
                 <div>
                     <p class="m-0 text-center" style="font-size: 30px;">View Profile</p>
                 </div>
@@ -72,64 +71,73 @@
                 <h1 class="app-logo mb-4"><span class="redff0000">Survey</span><span class="text-black">In</span></h1>
             </a>
 
-            <div class="profile-wrapper p-lg-4">
-
-                <div class="px-5 py-3 justify-content-between d-flex">
+            <section class="mt-5 mb-3">
+                <div class="mb-3 justify-content-between d-flex">
+                    <h3 class="text-secondary fw-bold">Reedem History
+                    </h3>
                     <h4 style="color: #020CFF;">{{ $user->rewardPoint }} Point</h4>
-                    <a href={{ url('/respondent/reward') }} class="text-secondary text-decoration-none">Reedem Reward</a>
                 </div>
 
-                <section class="profile-picture-section">
-                    <img src="../{{ $user->profileImageURL }}" class="user-avatar mb-3">
-                    <h2>{{ $user->fullName }}</h2>
-                </section>
-
-                <div class="px-5 py-3">
-                    <section>
-                        <h2 class="redff0000">Balance</h2>
-                        <div class="justify-content-between d-flex">
-                            <h2>Rp. {{ $user->balance }}</h2>
-                            <a href={{ url('/respondent/withdraw') }} class="btn btn-topup text-decoration-none">Withdraw</a>
+                <div class="" style="border: solid 1px;">
+                    <div class="row px-5 pt-4">
+                        <div class="col ">
+                            <h4 class="fw-bold">Voucher Tokopedia (Rp. 25 000)</h4>
+                            <p class="text-secondary">23 December 2021 </p>
                         </div>
-                    </section>
-                </div>
-
-                <section class="px-5 py-3">
-                    <div class="row">
-                        <div class="col">
-                            <p class="profile-item-title">Email</p>
-                            <p class="profile-item-description">{{ $user->email }}</p>
-                        </div>
-                        <div class="col">
-                            <p class="profile-item-title">Occupation</p>
-                            <p class="profile-item-description">{{ $user->occupation }}</p>
-                        </div>
-
-                        <div class="w-100"></div>
-
-                        <div class="col">
-                            <p class="profile-item-title">Address</p>
-                            <p class="profile-item-description">{{ $user->address }}</p>
-                        </div>
-                        <div class="col">
-                            <p class="profile-item-title">Place of Birth</p>
-                            <p class="profile-item-description">{{ explode("*", $user->dateAndPOB)[1] }}</p>
-                        </div>
-
-                        <div class="w-100"></div>
-
-                        <div class="col">
-                            <p class="profile-item-title">Gender</p>
-                            <p class="profile-item-description">{{ $user->gender }}</p>
-                        </div>
-                        <div class="col">
-                            <p class="profile-item-title">Date of Birth</p>
-                            <p class="profile-item-description">{{ explode("*", $user->dateAndPOB)[0] }}</p>
+                        <div class="col text-end align-self-center">
+                            <p class="redff0000 fw-bold">- 500 Points</p>
                         </div>
                     </div>
-                </section>
-            </div>
+
+                    <hr class="shadow-lg">
+
+                    <div class="row px-5 py-2">
+                        <div class="col ">
+                            <h4 class="fw-bold">Voucher Shopee (Rp. 60 000)</h4>
+                            <p class="text-secondary">1 December 2021 </p>
+                        </div>
+                        <div class="col text-end align-self-center">
+                            <p class="redff0000 fw-bold">- 500 Points</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="mt-5 mb-3">
+                <div class="mb-3 justify-content-between d-flex">
+                    <h3 class="text-secondary fw-bold">Withdraw History
+                    </h3>
+                    <h4 style="color: #020CFF;">Rp. {{ $user->balance }}</h4>
+                </div>
+
+                <div class="" style="border: solid 1px;">
+                    <div class="row px-5 pt-4">
+                        <div class="col ">
+                            <h4 class="text-secondary">23 December 2021 </h4>
+                        </div>
+                        <div class="col text-end align-self-center">
+                            <p class="redff0000 fw-bold">- Rp. 10 000</p>
+                        </div>
+                    </div>
+
+                    <hr class="shadow-lg">
+
+                    <div class="row px-5 py-2">
+                        <div class="col ">
+                            <h4 class="text-secondary">1 December 2021 </h4>
+                        </div>
+                        <div class="col text-end align-self-center">
+                            <p class="redff0000 fw-bold">- Rp. 20 000</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
         </section>
+    </main>
 
 </body>
 

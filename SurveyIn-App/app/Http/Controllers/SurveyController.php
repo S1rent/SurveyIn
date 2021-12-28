@@ -187,4 +187,34 @@ class SurveyController extends Controller
             ]
         );
     }
+
+    public function getRespondentTransactionHistoryPage()
+    {
+        $user = User::where('email', Cookie::get('email'))->first();
+        if($user->fullName == NULL) {
+            return redirect('finishup');
+        }
+
+        return view(
+            'respondent-transaction-history',
+            [
+                'user' => $user
+            ]
+        );
+    }
+
+    public function getRespondentWithdrawBalancePage()
+    {
+        $user = User::where('email', Cookie::get('email'))->first();
+        if($user->fullName == NULL) {
+            return redirect('finishup');
+        }
+
+        return view(
+            'respondent-withdraw-balance',
+            [
+                'user' => $user
+            ]
+        );
+    }
 }
