@@ -54,6 +54,7 @@ Route::middleware('login.check')->group(function () {
         Route::get('/respondent/survey-detail', [SurveyController::class, 'getRespondentSurveyDetailPage']);
         Route::get('/respondent/survey/answer', [SurveyController::class, 'getRespondentRespondSurveyPage']);
         Route::get('/respondent/history/detail', [SurveyController::class, 'getRespondentHistoryDetailPage']);
+        Route::get('/respondent/forum', [SurveyController::class, 'getRespondentForumPage']);
     });
 });
 

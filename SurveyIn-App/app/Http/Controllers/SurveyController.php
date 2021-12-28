@@ -262,4 +262,19 @@ class SurveyController extends Controller
             ]
         );
     }
+
+    public function getRespondentForumPage()
+    {
+        $user = User::where('email', Cookie::get('email'))->first();
+        if($user->fullName == NULL) {
+            return redirect('finishup');
+        }
+
+        return view(
+            'respondent-forum',
+            [
+                'user' => $user
+            ]
+        );
+    }
 }

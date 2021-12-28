@@ -216,7 +216,7 @@
             <section class="mt-2 mb-3">
                 <h3 class="mb-3" style="color: #767070; font-weight: bold;">Thread</h3>
 
-                <a href="respondent-forum.html" class="thread-item text-decoration-none">
+                <a href={{ url('/respondent/forum') }} class="thread-item text-decoration-none">
                     <article class="py-3 px-4 align-items-center mb-4">
                         <div class="d-flex align-items-center" style="width: 100%;">
                             <img class="thread-avatar" src={{ asset('images/avatar-antonius.png') }}>
