@@ -64,7 +64,7 @@
             <div class="profile-wrapper p-lg-4">
                 <section class="profile-picture-section">
                     <img src="../{{ $user->profileImageURL }}" class="user-avatar mb-3">
-                    <h2>Philip Indra Prayitno</h2>
+                    <h2>{{ $user->fullName }}</h2>
                 </section>
 
                 <div class="px-5 py-3">
